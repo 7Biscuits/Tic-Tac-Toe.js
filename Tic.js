@@ -1,4 +1,4 @@
-// Function called whenever user tab on any box
+
 function myfunc() {
 
 	// Setting DOM to all boxes or input field
@@ -13,8 +13,6 @@ function myfunc() {
 	b8 = document.getElementById("b8").value;
 	b9 = document.getElementById("b9").value;
 
-	// Checking if Player X won or not and after
-	// that disabled all the other fields
 	if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
 		b2 == 'X') && (b3 == 'x' || b3 == 'X')) {
 		document.getElementById('print')
@@ -113,9 +111,6 @@ function myfunc() {
 		window.alert('Player X won');
 	}
 
-	// Checking of Player X finsh
-	// Checking for Player 0 starts, Is player 0 won or
-	// not and after that disabled all the other fields
 	else if ((b1 == '0' || b1 == '0') && (b2 == '0' ||
 		b2 == '0') && (b3 == '0' || b3 == '0')) {
 		document.getElementById('print')
@@ -213,8 +208,7 @@ function myfunc() {
 		window.alert('Player 0 won');
 	}
 
-	// Checking of Player 0 finsh
-	// Here, Checking about Tie
+
 	else if ((b1 == 'X' || b1 == '0') && (b2 == 'X'
 		|| b2 == '0') && (b3 == 'X' || b3 == '0') &&
 		(b4 == 'X' || b4 == '0') && (b5 == 'X' ||
@@ -254,8 +248,6 @@ function myfunc_2() {
 
 }
 
-// Here onwards, functions check turn of the player
-// and put accordingly value X or 0
 flag = 1;
 function myfunc_3() {
 	if (flag == 1) {
